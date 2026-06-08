@@ -1,8 +1,18 @@
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+
+function LinkedinIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+    </svg>
+  );
+}
+import { services } from "@/lib/data";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact Us | TAC",
-  description: "Get in touch with The Arete Connoisseurs.",
+  description: "Tell us about the accreditation, quality, or systems challenge you are working on. We respond within two business days.",
 };
 
 export default function Contact() {
@@ -10,82 +20,33 @@ export default function Contact() {
     <div className="py-24 bg-neutral-light min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
           <div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-neutral-dark mb-6">Start a conversation</h1>
             <p className="text-xl text-gray-600 mb-12 leading-relaxed">
               Tell us about the accreditation, quality, or systems challenge you are working on. We will respond within two business days.
             </p>
-            
+
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-neutral-dark mb-1">Office Address</h3>
-                  <p className="text-gray-600">Lagos, Nigeria</p>
-                </div>
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0"><MapPin className="w-5 h-5" /></div>
+                <div><h3 className="font-bold text-neutral-dark mb-1">Office Address</h3><p className="text-gray-600">Lagos, Nigeria</p></div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-neutral-dark mb-1">Email</h3>
-                  <p className="text-gray-600">hello@theareteconnoisseurs.org</p>
-                </div>
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0"><Mail className="w-5 h-5" /></div>
+                <div><h3 className="font-bold text-neutral-dark mb-1">Email</h3><p className="text-gray-600">hello@theareteconnoisseurs.org</p></div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0"><Phone className="w-5 h-5" /></div>
+                <div><h3 className="font-bold text-neutral-dark mb-1">Phone</h3><p className="text-gray-600">Available on request</p></div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0"><LinkedinIcon className="w-5 h-5" /></div>
+                <div><h3 className="font-bold text-neutral-dark mb-1">LinkedIn</h3><p className="text-gray-600">The Arete Connoisseurs</p></div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                  <input type="text" id="name" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Jane Doe" required />
-                </div>
-                <div>
-                  <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-2">Role</label>
-                  <input type="text" id="role" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Quality Director" required />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">Organization</label>
-                  <input type="text" id="organization" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Institution Name" required />
-                </div>
-                <div>
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-2">Country</label>
-                  <input type="text" id="country" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Nigeria" required />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-2">Inquiry Type</label>
-                <select id="inquiryType" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all bg-white" required>
-                  <option value="">Select an option</option>
-                  <option value="regulator">Regulator</option>
-                  <option value="institution">Institution</option>
-                  <option value="partner">Development Partner</option>
-                  <option value="media">Media</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-2">Brief description of the opportunity</label>
-                <textarea id="description" rows={4} className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none" placeholder="How can we help?" required></textarea>
-              </div>
-
-              <button type="button" className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-md transition-colors shadow-sm">
-                Submit Inquiry
-              </button>
-            </form>
-          </div>
-
+          <ContactForm serviceOptions={services.map((s) => s.title)} />
         </div>
       </div>
     </div>
