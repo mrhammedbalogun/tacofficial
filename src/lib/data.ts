@@ -155,28 +155,28 @@ export const faculty: Faculty[] = [
     image: "/images/faculty/mariam.jpg",
     summary:
       "Consultant Clinical and Radiation Oncologist who brings frontline clinical credibility to TAC\u2019s standards, quality, and assessor-training work.",
-    signalCredentials: ["FWACS", "FMCR", "MB;BS", "Antimicrobial Stewardship"],
+    signalCredentials: ["FWACS", "FMCR", "MBBS", "Antimicrobial Stewardship"],
     profile: [
-      "Dr. Mariam A. Bashir is a Consultant Clinical and Radiation Oncologist whose work sits where clinical excellence, multidisciplinary coordination, and patient safety meet \u2014 the daily reality of delivering complex, high-stakes cancer care. A Fellow of the West African College of Surgeons and of the Medical College of Radiology (Radiation and Clinical Oncology), she has practised at the front line of one of medicine\u2019s most exacting specialties, where the margin for error is small and the discipline of standards is not optional but lifesaving.",
+      "Dr. Mariam A. Bashir is a Consultant Clinical and Radiation Oncologist whose work sits where clinical excellence, multidisciplinary coordination, and patient safety meet \u2014 the daily reality of delivering complex, high-stakes cancer care. A Fellow of the West African College of Surgeons and of the Medical College of Radiology (Radiation and Clinical Oncology), she has practised at the front line of one of medicine\u2019s most exacting specialities, where the margin for error is small and the discipline of standards is not optional but lifesaving.",
       "She partners with The Arete Connoisseurs as the firm\u2019s clinical anchor \u2014 bringing the voice of the practising specialist into TAC\u2019s standards, quality, and training work. Her career has been defined by translating evidence into reliable, protocol-driven care: building clinical services from the ground up, developing the guidelines and stewardship frameworks that protect patients, and mentoring the next generation of specialists.",
     ],
     roleAtTac: [
-      "As Partner, Dr. Bashir ensures that the standards, assessor training, and quality-improvement frameworks TAC delivers to regulators and institutions are clinically sound and implementable at the bedside \u2014 not just defensible on paper. Accreditation systems succeed or fail on whether frontline clinicians can actually work to them; her contribution is to keep TAC\u2019s work grounded in that test.",
-      "Within TAC\u2019s faculty model, she anchors the firm\u2019s clinical-standards and quality-of-care perspective, with particular depth in cancer-care service design, multidisciplinary team working, clinical guideline development, and antimicrobial stewardship.",
+      "As Partner, Dr. Bashir ensures that the standards, assessor training, and quality-improvement frameworks TAC delivers to regulators and institutions are clinically sound and implementable at the bedside \u2014 not just defensible on paper. Accreditation systems succeed or fail on whether frontline clinicians can actually work with them; her contribution is to keep TAC\u2019s work grounded in that test.",
+      "Within TAC\u2019s faculty model, she anchors the firm\u2019s clinical standards and quality-of-care perspective, with particular depth in cancer care service design, multidisciplinary team working, clinical guideline development, and antimicrobial stewardship.",
     ],
     experience: [
-      { lead: "Consultant Clinical & Radiation Oncologist", text: "helping to establish a new oncology department \u2014 from service model through to patient-management protocols; experienced in managing head & neck, breast, and pelvic malignancies and sarcomas at a major teaching-hospital cancer centre." },
+      { lead: "Consultant Clinical & Radiation Oncologist", text: "Currently at Lagos University Teaching Hospital (LUTH) / MedServe LUTH Cancer Centre, managing head & neck, breast, and pelvic malignancies and sarcomas; previously at General Hospital, Ikorodu, where she helped to establish a new oncology department \u2014 from service model through to patient-management protocols." },
       { lead: "Clinical leadership as Chief Resident", text: "led a team of 9\u201310 residents \u2014 organising supervision rotas and driving exam-focused training, drills, and mentorship across a radiation and clinical oncology department." },
-      { lead: "Clinical guideline development & patient safety", text: "member of an institutional Antimicrobial Stewardship Committee and contributor to a hospital antibiotic guideline, including provisions specific to cancer patients \u2014 hands-on clinical-governance and patient-safety standard-setting." },
-      { lead: "Multidisciplinary cancer care", text: "routine tumour-board participation and the contouring and review of 3D-CRT, IMRT, and VMAT radiotherapy plans \u2014 coordinated, protocolised, peer-reviewed practice." },
-      { lead: "Research & academic leadership", text: "chaired a residents\u2019 research and medical committee and authored multiple peer-reviewed oncology publications, with sustained work in research conception, data management, and manuscript writing." },
+      { lead: "Clinical guideline development & patient safety", text: "member of the LUTH Antimicrobial Stewardship Committee and contributor to the LUTH antibiotic guideline, including provisions specific to cancer patients \u2014 hands-on clinical-governance and patient-safety standard-setting." },
+      { lead: "Multidisciplinary cancer care", text: "routine tumour-board participation and the contouring and review of Three-Dimensional Conformal Radiation Therapy (3D-CRT), Intensity-Modulated Radiation Therapy (IMRT), and Volumetric Modulated Arc Therapy (VMAT) radiotherapy plans \u2014 coordinated, protocolised, peer-reviewed practice." },
+      { lead: "Research & academic leadership", text: "chaired the LUTH Association of Resident Doctors (ARD-LUTH) Research & Medical Committee and authored multiple peer-reviewed oncology publications, with sustained work in research conception, data management, and manuscript writing." },
     ],
     credentials: [
       "Fellow, West African College of Surgeons \u2014 Radiation and Clinical Oncology (FWACS)",
       "Fellow, Medical College of Radiology \u2014 Radiation and Clinical Oncology (FMCR)",
-      "MB;BS, College of Medicine, University of Lagos",
+      "MBBS, College of Medicine, University of Lagos",
       "Best Graduating Student, Radiation and Clinical Oncology, NPMCN Part II examinations",
-      "Member, Antimicrobial Stewardship Committee",
+      "Member, LUTH Antimicrobial Stewardship Committee",
       "Member, Scientific Committee, Association of Radiation and Clinical Oncologists of Nigeria (ARCON)",
     ],
     publications: [
@@ -185,7 +185,7 @@ export const faculty: Faculty[] = [
       "Adeniji AA, Dawodu OO, Habeebu MY, Oyekan AO, Bashir MA, et al. Distribution of Breast Cancer Subtypes Among Nigerian Women. World J Oncol, 2020.",
     ],
     contribution:
-      "Dr. Bashir\u2019s distinctive contribution is the credibility of a practising consultant who has both delivered complex, high-stakes care and built the systems around it \u2014 clinical guidelines, antimicrobial stewardship, outcome data, and specialist training. For TAC\u2019s regulator and institution clients, she is the assurance that quality standards and accreditation frameworks are clinically valid and workable where care is actually given.",
+      "Dr. Bashir\u2019s distinctive contribution is the credibility of a practising consultant who has both delivered complex, high-stakes care and built the systems that support it \u2014 clinical guidelines, antimicrobial stewardship, outcome data, and specialist training. For TAC\u2019s regulator and institution clients, she is the assurance that quality standards and accreditation frameworks are clinically valid and workable where care is actually given.",
   },
   {
     id: "shakira-bashir",
