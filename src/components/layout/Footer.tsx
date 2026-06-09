@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="hover:text-accent transition-colors">Get in touch</Link></li>
               <li className="mt-4">
-                <a href="#" className="inline-flex items-center gap-2 text-accent hover:text-accent-light font-medium transition-colors">
+                <a href="/contact" className="inline-flex items-center gap-2 text-accent hover:text-accent-light font-medium transition-colors">
                   Request Capability Statement
                   <span aria-hidden="true">&rarr;</span>
                 </a>
@@ -47,8 +47,8 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} The Arete Connoisseurs. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
           </div>
         </div>
       </div>
