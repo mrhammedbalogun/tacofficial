@@ -151,7 +151,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">World-Class Faculty</h2>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed font-sans">
-            Founded by Emmanuel, a health quality leader, our faculty brings together contributors to global standards and veteran operators of national verification platforms.
+            Our faculty brings together contributors to global healthcare quality standards and veteran operators of national verification platforms &mdash; senior practitioners convened to deliver at the standard our clients require.
           </p>
           <Link href="/our-faculty" className="inline-flex items-center gap-2 bg-white text-neutral-dark hover:bg-gray-100 px-8 py-4 rounded-md font-semibold text-lg transition-colors">
             Meet the team <ArrowRight className="w-5 h-5" />
