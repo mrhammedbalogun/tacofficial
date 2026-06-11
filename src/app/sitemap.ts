@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/who-we-serve",
     "/our-work",
     "/our-faculty",
+    "/about",
     "/contact",
     "/privacy",
     "/terms",

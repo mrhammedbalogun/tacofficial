@@ -35,8 +35,8 @@ export default function OurWork() {
                     <span key={tag} className="text-xs font-semibold text-accent uppercase tracking-wider bg-accent/10 px-2 py-1 rounded-sm">{tag}</span>
                   ))}
                 </div>
-                <h2 className="text-xl font-bold text-neutral-dark mb-1 group-hover:text-primary transition-colors">{e.title}</h2>
-                <p className="text-sm text-gray-500 mb-4">{e.client}</p>
+                <h2 className="text-xl font-bold text-neutral-dark mb-1 group-hover:text-primary transition-colors">{e.headline}</h2>
+                <p className="text-sm text-gray-500 mb-4">{e.title} · {e.client}</p>
                 <div className="flex flex-wrap gap-2 mb-5 mt-auto">
                   {e.metrics.map((m) => (
                     <span key={m} className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">{m}</span>

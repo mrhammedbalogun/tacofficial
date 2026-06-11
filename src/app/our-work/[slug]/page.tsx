@@ -34,7 +34,8 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
           <div className="flex flex-wrap gap-2 mb-4">
             {e.tags.map((t) => (<span key={t} className="text-xs font-semibold text-accent uppercase tracking-wider bg-accent/10 px-2 py-1 rounded-sm">{t}</span>))}
           </div>
-          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4">{e.title}</h1>
+          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">{e.title}</p>
+          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4">{e.headline}</h1>
           <p className="text-lg text-gray-300 mb-2">{e.client}</p>
           <p className="flex items-center gap-2 text-gray-400 text-sm"><MapPin className="w-4 h-4" /> {e.region}</p>
         </div>
