@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { services, sectors, engagements } from "@/lib/data";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CardVisual } from "@/components/CardVisual";
 
 export default function Home() {
   const topServices = services.slice(0, 3);
@@ -98,10 +99,10 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {sectors.map(sector => (
+            {sectors.map((sector, i) => (
               <Link href={`/who-we-serve#${sector.id}`} key={sector.id} className="relative overflow-hidden rounded-xl group h-80">
-                <Image src="/images/case_study_hospital.png" alt={sector.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark/90 via-neutral-dark/40 to-transparent" />
+                <CardVisual index={i} icon={sector.icon} />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark/80 via-neutral-dark/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
                   <h3 className="text-2xl font-bold text-white">{sector.title}</h3>
                   <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all">
@@ -128,10 +129,10 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {engagements.slice(0, 3).map(engagement => (
+            {engagements.slice(0, 3).map((engagement, i) => (
               <Link href={`/our-work#${engagement.id}`} key={engagement.id} className="group">
                 <div className="relative h-64 rounded-xl overflow-hidden mb-6">
-                  <Image src={engagement.image} alt={engagement.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <CardVisual index={i} icon={engagement.icon} />
                 </div>
                 <div className="flex gap-2 mb-3">
                   {engagement.tags.map(tag => (
