@@ -179,6 +179,7 @@ export type Engagement = {
   slug: string;
   client: string;
   title: string;
+  headline: string;
   region: string;
   image: string;
   tags: string[];
@@ -196,6 +197,7 @@ export const engagements: Engagement[] = [
     slug: "national-accreditation-ecosystem",
     client: "A national health-training regulator",
     title: "National Electronic Accreditation Ecosystem",
+    headline: "One auditable system for 600+ institutions",
     region: "West Africa",
     image: "/images/hero_bg.png",
     tags: ["eAMS", "Regulators"],
@@ -219,6 +221,7 @@ export const engagements: Engagement[] = [
     slug: "national-cpd-programme",
     client: "A donor-funded health workforce programme",
     title: "National Continuing-Education Programme \u2014 Healthcare Workforce",
+    headline: "CPD that reached 500,000+ health workers",
     region: "West Africa",
     image: "/images/case_study_hospital.png",
     tags: ["Learning & Performance", "Development Partners"],
@@ -242,6 +245,7 @@ export const engagements: Engagement[] = [
     slug: "regional-quality-certification",
     client: "A regional health quality certification programme",
     title: "Regional Health Quality Certification Programme",
+    headline: "Quality certification across 50+ facilities; 2M+ lives reached",
     region: "Sub-Saharan Africa",
     image: "/images/case_study_hospital.png",
     tags: ["Standards Development", "Health Institutions"],
@@ -264,6 +268,7 @@ export const engagements: Engagement[] = [
     slug: "jci-accreditation-preparedness",
     client: "A leading tertiary hospital",
     title: "JCI Accreditation Preparedness",
+    headline: "JCI accreditation \u2014 achieved and sustained",
     region: "Nigeria",
     image: "/images/case_study_hospital.png",
     tags: ["Accreditation Preparedness", "Health Institutions"],

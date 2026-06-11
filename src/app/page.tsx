@@ -138,8 +138,8 @@ export default function Home() {
                     <span key={tag} className="text-xs font-semibold text-accent uppercase tracking-wider">{tag}</span>
                   ))}
                 </div>
-                <h3 className="text-xl font-bold text-neutral-dark mb-2 group-hover:text-primary transition-colors">{engagement.client}</h3>
-                <p className="text-gray-600">{engagement.title}</p>
+                <h3 className="text-xl font-bold text-neutral-dark mb-2 group-hover:text-primary transition-colors">{engagement.headline}</h3>
+                <p className="text-sm text-gray-500">{engagement.title}</p>
               </Link>
             ))}
           </div>

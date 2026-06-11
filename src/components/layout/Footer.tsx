@@ -27,6 +27,7 @@ export default function Footer() {
               <li><Link href="/who-we-serve" className="hover:text-accent transition-colors">Who We Serve</Link></li>
               <li><Link href="/our-work" className="hover:text-accent transition-colors">Our Work</Link></li>
               <li><Link href="/our-faculty" className="hover:text-accent transition-colors">Our Faculty</Link></li>
+              <li><Link href="/about" className="hover:text-accent transition-colors">About TAC</Link></li>
             </ul>
           </div>
           
