@@ -32,7 +32,7 @@ export default function OurWork() {
               <div className="p-7 flex flex-col flex-grow">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {e.tags.map((tag) => (
-                    <span key={tag} className="text-xs font-semibold text-accent uppercase tracking-wider bg-accent/10 px-2 py-1 rounded-sm">{tag}</span>
+                    <span key={tag} className="text-xs font-semibold text-accent-strong uppercase tracking-wider bg-accent/10 px-2 py-1 rounded-sm">{tag}</span>
                   ))}
                 </div>
                 <h2 className="text-xl font-bold text-neutral-dark mb-1 group-hover:text-primary transition-colors">{e.title}</h2>

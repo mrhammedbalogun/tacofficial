@@ -39,7 +39,7 @@ export default function Home() {
               </Link>
               <Link 
                 href="/our-work" 
-                className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-8 py-4 rounded-md font-semibold text-lg transition-all text-center"
+                className="bg-transparent hover:bg-white/10 text-white border-2 border-white/70 px-8 py-4 rounded-md font-semibold text-lg transition-all text-center"
               >
                 Explore our engagements
               </Link>
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2 mb-3">
                   {engagement.tags.map(tag => (
-                    <span key={tag} className="text-xs font-semibold text-accent uppercase tracking-wider">{tag}</span>
+                    <span key={tag} className="text-xs font-semibold text-accent-strong uppercase tracking-wider">{tag}</span>
                   ))}
                 </div>
                 <h3 className="text-xl font-bold text-neutral-dark mb-2 group-hover:text-primary transition-colors">{engagement.client}</h3>

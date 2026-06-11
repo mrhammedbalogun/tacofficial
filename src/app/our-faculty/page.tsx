@@ -42,7 +42,7 @@ export default function OurFaculty() {
                 <h2 className="text-2xl font-bold font-serif text-neutral-dark group-hover:text-primary transition-colors">
                   {member.name}
                 </h2>
-                <h3 className="text-sm font-semibold text-accent mt-1 mb-4">{member.role}</h3>
+                <h3 className="text-sm font-semibold text-accent-strong mt-1 mb-4">{member.role}</h3>
                 <p className="text-gray-600 leading-relaxed flex-grow">{member.summary}</p>
                 <div className="flex flex-wrap gap-2 mt-5">
                   {member.signalCredentials.map((c) => (
