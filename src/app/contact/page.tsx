@@ -26,6 +26,16 @@ export default function Contact() {
               Tell us about the accreditation, quality, or systems challenge you are working on. We will respond within two business days.
             </p>
 
+            <a
+              href="https://cal.com/ayodejisamuels/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition-colors mb-12"
+            >
+              Book a 30-minute discovery call
+            </a>
+            <p className="text-sm text-gray-500 -mt-8 mb-12">Prefer to write? Use the form &rarr;</p>
+
             <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm shrink-0"><MapPin className="w-5 h-5" /></div>
