@@ -30,18 +30,20 @@ export default function Home() {
               Standards, systems, and surveyors for the regulators and institutions shaping healthcare quality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/who-we-serve#regulators" 
+              <a
+                href="https://cal.com/ayodejisamuels/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-md font-semibold text-lg transition-all text-center flex items-center justify-center gap-2 group"
               >
-                See how we work with regulators
+                Book a discovery call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link 
-                href="/our-work" 
-                className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-8 py-4 rounded-md font-semibold text-lg transition-all text-center"
+              </a>
+              <Link
+                href="/who-we-serve#regulators"
+                className="bg-transparent hover:bg-white/10 text-white border-2 border-white/70 px-8 py-4 rounded-md font-semibold text-lg transition-all text-center"
               >
-                Explore our engagements
+                See how we work with regulators
               </Link>
             </div>
           </div>
