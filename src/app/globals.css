@@ -6,6 +6,7 @@
   --color-primary-dark: #4b226e;
   --color-accent: #dca03e;
   --color-accent-light: #ebb963;
+  --color-accent-strong: #8a5a12;
   --color-neutral-dark: #121619;
   --color-neutral-light: #f8fafc;
   
@@ -35,4 +36,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), ui-serif, Georgia, serif;
+}
+
+/* Visible keyboard focus for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }

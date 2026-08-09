@@ -42,7 +42,7 @@ export default function WhoWeServe() {
                     <p className="text-lg text-gray-800 leading-relaxed mb-4">{sector.intro}</p>
                     <p className="text-gray-600 leading-relaxed mb-8">{sector.approach}</p>
 
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-accent mb-4">What we bring to this sector</h3>
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-accent-strong mb-4">What we bring to this sector</h3>
                     <div className="grid sm:grid-cols-3 gap-4 mb-8">
                       {sectorServices.map((s) => (
                         <Link href={`/what-we-do#${s.id}`} key={s.id} className="group p-4 rounded-xl bg-neutral-light border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all">
@@ -54,7 +54,7 @@ export default function WhoWeServe() {
 
                     {sectorEngagements.length > 0 && (
                       <div className="mb-8">
-                        <h3 className="text-sm font-bold uppercase tracking-wider text-accent mb-4">Engagements in this sector</h3>
+                        <h3 className="text-sm font-bold uppercase tracking-wider text-accent-strong mb-4">Engagements in this sector</h3>
                         <div className="flex flex-wrap gap-3">
                           {sectorEngagements.map((e) => (
                             <Link href={`/our-work#${e.id}`} key={e.id} className="inline-flex items-center gap-2 text-sm font-medium text-neutral-dark bg-white border border-gray-200 rounded-full px-4 py-2 hover:border-primary/40 hover:text-primary transition-colors">
