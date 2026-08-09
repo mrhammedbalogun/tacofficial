@@ -122,6 +122,7 @@ export type Sector = {
   title: string;
   slug: string;
   tag: string;
+  icon: string;
   image: string;
   intro: string;
   approach: string;
@@ -135,6 +136,7 @@ export const sectors: Sector[] = [
     title: "Regulators & Accreditation Bodies",
     slug: "regulators",
     tag: "Regulators",
+    icon: "Landmark",
     image: "/images/hero_bg.png",
     intro:
       "If you are a regulator or accreditation body, you are responsible for the standards an entire health system is measured against \u2014 and for proving, credibly, that those standards are applied consistently. That is exacting work, and the tools to do it well are rarely available off the shelf.",
@@ -149,6 +151,7 @@ export const sectors: Sector[] = [
     title: "Health Institutions",
     slug: "health-institutions",
     tag: "Health Institutions",
+    icon: "Building2",
     image: "/images/case_study_hospital.png",
     intro:
       "If you lead a hospital or health institution, accreditation is not a certificate on the wall \u2014 it is the operating discipline that keeps patients safe and teams aligned. Preparing for it, and sustaining it, is a programme, not an event.",
@@ -163,6 +166,7 @@ export const sectors: Sector[] = [
     title: "Development Partners",
     slug: "development-partners",
     tag: "Development Partners",
+    icon: "Globe2",
     image: "/images/case_study_hospital.png",
     intro:
       "If you are a development partner, you need implementing teams who deliver measurable results and report them with the rigour your funders expect \u2014 across complex, multi-jurisdiction programmes.",
@@ -180,6 +184,7 @@ export type Engagement = {
   client: string;
   title: string;
   region: string;
+  icon: string;
   image: string;
   tags: string[];
   outcome: string;
@@ -197,6 +202,7 @@ export const engagements: Engagement[] = [
     client: "A national health-training regulator",
     title: "National Electronic Accreditation Ecosystem",
     region: "West Africa",
+    icon: "MonitorCheck",
     image: "/images/hero_bg.png",
     tags: ["eAMS", "Regulators"],
     outcome: "600+ training institutions brought under consistent, auditable oversight.",
@@ -220,6 +226,7 @@ export const engagements: Engagement[] = [
     client: "A donor-funded health workforce programme",
     title: "National Continuing-Education Programme \u2014 Healthcare Workforce",
     region: "West Africa",
+    icon: "LineChart",
     image: "/images/case_study_hospital.png",
     tags: ["Learning & Performance", "Development Partners"],
     outcome: "500,000+ healthcare workers reached through national CPD infrastructure.",
@@ -243,6 +250,7 @@ export const engagements: Engagement[] = [
     client: "A regional health quality certification programme",
     title: "Regional Health Quality Certification Programme",
     region: "Sub-Saharan Africa",
+    icon: "Award",
     image: "/images/case_study_hospital.png",
     tags: ["Standards Development", "Health Institutions"],
     outcome: "2,000,000+ lives reached; 50+ facilities certified.",
@@ -265,6 +273,7 @@ export const engagements: Engagement[] = [
     client: "A leading tertiary hospital",
     title: "JCI Accreditation Preparedness",
     region: "Nigeria",
+    icon: "ClipboardCheck",
     image: "/images/case_study_hospital.png",
     tags: ["Accreditation Preparedness", "Health Institutions"],
     outcome: "Achieved and maintained Joint Commission International accreditation.",

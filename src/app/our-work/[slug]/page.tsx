@@ -1,8 +1,8 @@
 import { engagements } from "@/lib/data";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, MapPin, CheckCircle2 } from "lucide-react";
+import { CardVisual } from "@/components/CardVisual";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -24,9 +24,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
   return (
     <div className="bg-white min-h-screen">
       <section className="relative bg-neutral-dark text-white">
-        <div className="absolute inset-0 opacity-20">
-          <Image src={e.image} alt="" fill className="object-cover" />
-        </div>
+        <CardVisual index={0} icon={e.icon} className="opacity-25" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <Link href="/our-work" className="inline-flex items-center gap-2 text-gray-300 hover:text-white text-sm mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" /> All work

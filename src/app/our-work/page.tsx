@@ -1,7 +1,7 @@
 import { engagements } from "@/lib/data";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
+import { CardVisual } from "@/components/CardVisual";
 
 export const metadata = {
   title: "Our Work | TAC",
@@ -21,10 +21,10 @@ export default function OurWork() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {engagements.map((e) => (
+          {engagements.map((e, i) => (
             <Link id={e.id} href={`/our-work/${e.slug}`} key={e.id} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 flex flex-col scroll-mt-24">
               <div className="relative h-56 overflow-hidden">
-                <Image src={e.image} alt={e.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+                <CardVisual index={i} icon={e.icon} />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm flex items-center gap-1">
                   <MapPin className="w-3 h-3" /> {e.region}
                 </div>

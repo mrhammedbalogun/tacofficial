@@ -1,7 +1,7 @@
 import { sectors, services, engagements } from "@/lib/data";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Handshake } from "lucide-react";
+import { CardVisual } from "@/components/CardVisual";
 
 export const metadata = {
   title: "Who We Serve | TAC",
@@ -32,8 +32,8 @@ export default function WhoWeServe() {
                 <div className={`flex flex-col ${index % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 items-start`}>
                   {/* Visual */}
                   <div className="w-full lg:w-2/5 relative h-72 lg:h-96 rounded-2xl overflow-hidden shadow-xl shrink-0">
-                    <Image src={sector.image} alt={sector.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 40vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark/70 to-transparent" />
+                    <CardVisual index={index} icon={sector.icon} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark/60 to-transparent" />
                     <h2 className="absolute bottom-6 left-6 right-6 text-3xl font-serif font-bold text-white">{sector.title}</h2>
                   </div>
 
